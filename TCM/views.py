@@ -58,14 +58,17 @@ def register(request):
             form.save()
             username = form.cleaned_data['username']
             messages.success(request, f'Usuario {username} ha sido creado')
+            
+            # Redirige al usuario a la página de inicio
+            return redirect('home')
+            
         else:
             messages.error(request, f'Error durante la creación del usuario')
-            # Agrega un indicador al contexto para mostrar el mensaje de error
             context = {'form': form, 'display_error_message': True}
             return render(request, 'register/registro.html', context)
-
     else:
         form = RegistroUsuarioForm()
+    
     context = {'form': form}
     return render(request, 'register/registro.html', context)
 

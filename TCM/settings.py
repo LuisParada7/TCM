@@ -319,5 +319,4 @@ EMAIL_HOST_USER = 'tallerdecosturamilenita@gmail.com'
 EMAIL_HOST_PASSWORD = 'ouca fafa jrcj uilm'
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://127.0.0.1:8000']
 
