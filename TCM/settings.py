@@ -37,6 +37,7 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -229,6 +230,7 @@ JAZZMIN_UI_TWEAKS = {
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.middleware.locale.LocaleMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware', 
