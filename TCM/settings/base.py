@@ -16,20 +16,14 @@ from . import db
 from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-u#nb%=sv=%#=b*#)q3gnj34s0hb=ylgw)1sd8hlblr_z%1w6m)'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -321,4 +315,3 @@ EMAIL_HOST_USER = 'tallerdecosturamilenita@gmail.com'
 EMAIL_HOST_PASSWORD = 'ouca fafa jrcj uilm'
 
 ALLOWED_HOSTS = ['.vercel.app']
-
