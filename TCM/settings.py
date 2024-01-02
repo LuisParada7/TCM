@@ -318,5 +318,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'tallerdecosturamilenita@gmail.com'
 EMAIL_HOST_PASSWORD = 'ouca fafa jrcj uilm'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercel.app']
 
