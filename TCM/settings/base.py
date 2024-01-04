@@ -69,7 +69,6 @@ JAZZMIN_SETTINGS = {
     "site_brand": "Admin. TCM",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "image\logo2.jpg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": "image\logo3.png",
