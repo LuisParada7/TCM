@@ -105,15 +105,7 @@
                             <br>
                             <small style="color: grey;">La contraseña no debe ser similar a su nombre de usuario.</small>
                             <br>
-                            <small style="color: grey;">La contraseña debe tener un mínimo de dificultad de lo contrario no se creara el usuario.</small>
-                            <br>
-                            <button type="button" id="toggle-password" class="toggle-password" onclick="togglePasswordVisibility()">
-                                <i class='bx bx-show'></i>
-                            </button>
                         </div>
-
-                        
-                        
                         <div class="input-box">
                             <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
                             <input type="password" id="confirm-password-field" required name="password2">
@@ -160,21 +152,6 @@
             errorMessage.style.display = 'none';
         }
     }, 3000);
-</script>
-
-<script>
-    function togglePasswordVisibility() {
-        var passwordField = document.getElementById("password-field");
-        var toggleButton = document.getElementById("toggle-password");
-
-        if (passwordField.type === "password") {
-            passwordField.type = "text";
-            toggleButton.innerHTML = "<i class='bx bx-hide'></i>"; // Icono para ocultar
-        } else {
-            passwordField.type = "password";
-            toggleButton.innerHTML = "<i class='bx bx-show'></i>"; // Icono para mostrar
-        }
-    }
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
