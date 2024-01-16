@@ -21,5 +21,4 @@ class SalesForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # Personaliza las opciones del campo de servicio
         self.fields['service'].queryset = Services.objects.all()

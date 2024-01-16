@@ -22,10 +22,9 @@ class ActivitiesAdmin(ImportExportModelAdmin):
     ordering = ['date']
     
     def save_model(self, request, obj, form, change):
-        # Guarda el objeto primero
+
         super().save_model(request, obj, form, change)
 
-        # Establece la relación después de que el objeto se ha guardado
         obj.activities_process.set(form.cleaned_data['activities_process'])
 
 @admin.register(Salary)

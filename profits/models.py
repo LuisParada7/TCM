@@ -8,7 +8,6 @@ class Profit(models.Model):
     fk_sale = models.ForeignKey(Sales, on_delete=models.CASCADE, verbose_name="Venta")
 
     def save(self, *args, **kwargs):
-        # Asigna la cantidad y la fecha de la venta a los campos correspondientes en Profit
         self.quantity = self.fk_sale.amount * self.fk_sale.service.price
         self.date = self.fk_sale.date
         super().save(*args, **kwargs)

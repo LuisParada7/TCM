@@ -1,16 +1,12 @@
-
+body{
+    margin: 0;
+    padding: 0;
+}
 .item{
-    position: absolute;
     top: 0;
     left: 0;
-    width: 58%;
-    height: 100%;
     color: #000000;
     background: transparent;
-    padding: 80px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 .item .logo{
     color: #000000;
@@ -19,16 +15,13 @@
 }
 .text-item h2{
     font-size: 40px;
-    line-height: 1;
 }
 .text-item p{
     font-size: 16px;
-    margin: 20px 0;
 }
 .social-icon a i{
     color: #000000;
     font-size: 24px;
-    margin-left: 10px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -36,22 +29,12 @@
     transform: scale(1.2);
 }
 .container .login-section{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(100% - 58%);
-    height: 100%;
-    color: #000000;
     background-color: transparent;
 }
 
 .login-section .form-box{
-    position: absolute;
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     
 }
 .login-section .form-box h2{
@@ -60,7 +43,7 @@
 }
 
 .form-box .input-box{
-    width: 340px;
+    width: 300px;
     height: 50px;
     border-bottom: 2px solid#000000;
     margin: 30px 0;
@@ -153,3 +136,14 @@
     margin-top: 150px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px; /* Añade un poco de relleno a los lados en tamaños pequeños */
+    }
+
+    .col-md-6 {
+        flex: 0 0 100%; /* Ocupa todo el ancho en dispositivos pequeños */
+        max-width: 100%; /* Evita que el formulario se desborde en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade margen inferior entre los elementos en dispositivos pequeños */
+    }
+}

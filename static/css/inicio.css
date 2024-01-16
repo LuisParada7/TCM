@@ -1,39 +1,8 @@
-.login{
-    margin-top: 28px;
-    margin-right: 20px;
-    float: right;
+body{
+    margin: 0;
+    padding: 0;
 }
-.registro{
-    margin-top: 28px;
-    margin-right: 10px;
-}
-
-.login a{
-font-family: 'Roboto Condensed', sans-serif;
-font-size: 20px;
-text-decoration: none;
-padding: 10px;
-background-color: gray;
-color: white;
-border-radius: 4px;
-box-shadow: 3px 3px 3px black;
-transition: 0.2s;
-position: static;
-margin-left: 800px;
-}
-.registro a{
-font-family: 'Roboto Condensed', sans-serif;
-font-size: 20px;
-text-decoration: none;
-padding: 10px;
-background-color: gray;
-color: white;
-border-radius: 4px;
-box-shadow: 3px 3px 3px black;
-position: static;
-}
-
-.login a{
+.login a {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -43,8 +12,11 @@ position: static;
     border-radius: 4px;
     box-shadow: 3px 3px 3px black;
     transition: 0.2s;
+    position: static;
+    margin-left: 800px;
 }
-.registro a{
+
+.registro a {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -53,35 +25,22 @@ position: static;
     color: white;
     border-radius: 4px;
     box-shadow: 3px 3px 3px black;
+    position: static;
 }
-.login a:hover{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-    box-shadow: 3px 3px 3px black;
-    transition: 0.2s;
-}
-.registro a:hover{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    border-radius: 4px;
-    box-shadow: 3px 3px 3px black;
-    transition: 0.2s;
-}
-.nosotros h2{
-    font-size: 45px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.nosotros p{
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.imagen{
-    text-align: center;
+@media (max-width: 767px) {
+    .imagen {
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .imagen img {
+        max-width: 50%;
+        height: auto;
+        
+    }
+
+    .nosotros {
+        text-align: center;
+        margin-bottom: 20px; /* Margen inferior */
+    }
 }

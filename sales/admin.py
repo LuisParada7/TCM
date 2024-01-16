@@ -21,7 +21,7 @@ class ServiceAdmin(ImportExportModelAdmin):
 class SalesAdmin(ImportExportModelAdmin):
     list_display = ('name', 'pay', 'amount', 'date', 'user', 'service', 'completed')
     search_fields = ('pay', 'amount', 'date')
-    list_display_links = ('date',)  # Eliminé 'amount' de list_display_links
+    list_display_links = ('date',) 
     search_fields = ('name',)
     ordering = ['id']
     
