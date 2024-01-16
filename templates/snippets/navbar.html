@@ -48,10 +48,18 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
+                {% if not request.resolver_match.url_name == 'logi' %}
+                <li class="nav-item ms-3">
+                    <a class="nav-link FontNavbar" href="{% url 'logn' %}" style=" font-family: Nunito;">
+                        <i class="fas fa-user me-2"></i> Iniciar sesión
+                    </a>
+                </li>
+                {% endif %}
+
                 {% if not request.resolver_match.url_name == 'login' %}
                 <li class="nav-item ms-3">
-                    <a class="nav-link FontNavbar" href="{% url 'login' %}" style=" font-family: Nunito;">
-                        <i class="fas fa-user me-2"></i> Iniciar sesión
+                    <a class="nav-link FontNavbar" href="{% url 'login' %}" style="font-family: Nunito;">
+                        <i class="fas fa-user-plus me-2"></i> Iniciar sesión
                     </a>
                 </li>
                 {% endif %}
