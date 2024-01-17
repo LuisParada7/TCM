@@ -107,12 +107,11 @@ def solicitud_compra(request):
             messages.success(request, f'Su solicitud de compra ha sido enviada')
             return redirect('servicios')
         else:
-            messages.success(request, f'Error durante el envio de la solicitud')
+            messages.errors(request, f'Error durante el envio de la solicitud')
     else:
         form = SalesForm()
     context = { 'form' : form}
     return render(request, 'ganancias/nueva_ganancia.html', context)
-
 
 @transaction.atomic
 @login_required(login_url='login')
